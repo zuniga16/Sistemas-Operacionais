@@ -1,2 +1,2 @@
 # Sistemas-Operacionais
-Git da turma Sistemas Operacionais
+GIT PARA PUBLICAÇÕES DE TRABALHOS E DOCUMENTOS DA DISCIPLINA
