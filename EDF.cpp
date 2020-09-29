@@ -6,7 +6,7 @@
 using namespace std;
 
 int hiper_periodo(int processos[3][4], int qnt){
-//	Hiper Periodo é o maior periodo dentre todos os processos
+//	Hiper Periodo Ã© o maior periodo dentre todos os processos
 	int temp = 0;
 	for(int i=0;i<qnt;i++){
 		if(processos[i][3]>temp){
@@ -117,11 +117,11 @@ void edf(int processos[3][4], int qnt){
 int main(){
 	setlocale(LC_ALL, "Portuguese");
 	
-//				         0  1  2  3
-//                       id bt dl p
+//			     0  1  2  3
+//                           id bt dl p
 	int processos[3][4]={0,3,7,20,
-					     1,2,4,5,
-					     2,2,8,10};
+			     1,2,4,5,
+			     2,2,8,10};
 		 
 	int qnt=3;
 	edf(processos, qnt);
