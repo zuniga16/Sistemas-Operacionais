@@ -6,7 +6,7 @@
 using namespace std;
 
 //  Calcular media do waiting time
-double average_wt(int processos[][2],int wt[], int qnt_processos){
+double average_wt(int wt[], int qnt_processos){
     double wt_all = 0;
     for(int i = 0; i < qnt_processos; i++){
     	wt_all += wt[i];
@@ -15,7 +15,7 @@ double average_wt(int processos[][2],int wt[], int qnt_processos){
 }
 
 //  Calcular media do Turnaround time
-double average_tat(int processos[][2],int tat[], int qnt_processos){
+double average_tat(int tat[], int qnt_processos){
     double tat_all = 0;
     for(int i = 0; i < qnt_processos; i++){
     	tat_all += tat[i];
@@ -52,7 +52,7 @@ Estrutura do Processo
 //  Calcular Waiting Time
 //	Definindo a quantidade tempos de servico de cada baseado na qnt. de processos
 	int tempo_servico[qnt_processos] = {0 * qnt_processos};
-//	O tempo de servico é a soma de todos os BurstTime dos Processos anteriores
+//	O tempo de servico Ã© a soma de todos os BurstTime dos Processos anteriores
 	tempo_servico[0] = 0;
 //	Definindo tamanho da waiting list
 	int wt[qnt_processos] = {0 * qnt_processos};	
@@ -73,8 +73,8 @@ Estrutura do Processo
     }
 
 	double avg_wt,avg_tat; 
-	avg_wt = average_wt(processos, wt, qnt_processos);
-	avg_tat = average_tat(processos, tat, qnt_processos);
+	avg_wt = average_wt(wt, qnt_processos);
+	avg_tat = average_tat(tat, qnt_processos);
 	
 //	Completion Time = Turn Around Time + Arrival Time
 	for(int proc = 0; proc < qnt_processos; proc++){
