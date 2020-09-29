@@ -1,3 +1,5 @@
+/* CREATED BY ZUNIGA */
+
 #include <iostream>
 #include <locale.h>
 
@@ -67,17 +69,17 @@ int main(){
 		bt_restante[x] = processos[x][2];
 	}
 	
-	int tempo = 0; // Tempo total que ser· adicionado ao WaitingTime
+	int tempo = 0; // Tempo total que ser√° adicionado ao WaitingTime
     int overhead = 1; // Valor hipotetico para o tempo gasto na troca de contexto entre processos
 
     while(true){
 //  Variavel de Controle, verifica se os processos foram
-//  finalizados ou n„o
+//  finalizados ou n√£o
 	    bool finalizados = true;
 	    for(int i = 0; i < qnt_processos; i++){
 	        tempo += overhead; // Para cada troca de contexto entre os processos, Adicionar ao Tempo Total
 	
-	        // Se for maior que 0, ainda h· processos a serem
+	        // Se for maior que 0, ainda h√° processos a serem
 	        // Finalizados
 	        if(bt_restante[i] > 0){
 	            finalizados = false;
@@ -99,7 +101,7 @@ int main(){
 	            }
 	        }
 	    }
-	    // Se todos os Processos foram concluÌdos
+	    // Se todos os Processos foram conclu√≠dos
 	    if(finalizados == true){
     	break;
 		}
@@ -111,11 +113,11 @@ int main(){
         tat[c] = processos[c][2] + wt[c];
     }
     
-	// MÈdia de todos os TurnAround Time
+	// M√©dia de todos os TurnAround Time
 	double avg_tat;
 	avg_tat = average_tat(tat, qnt_processos);
 	
-	// MÈdia de todos os Waiting Time
+	// M√©dia de todos os Waiting Time
 	double avg_wt;
 	avg_wt = average_wt(wt, qnt_processos);
 	
