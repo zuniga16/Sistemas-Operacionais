@@ -1,2 +1,2 @@
-# Sistemas-Operacionais
+# Sistemas Operacionais
 GIT PARA PUBLICAÇÕES DE ARQUIVOS DA DISCIPLINA
