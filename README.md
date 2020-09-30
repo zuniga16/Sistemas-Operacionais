@@ -1,4 +1,6 @@
 # Sistemas Operacionais
 ### GIT PARA PUBLICAÇÕES DE ARQUIVOS DA DISCIPLINA
+- algoritmos_de_escalonamento_em_c++
 - [x] Transformar algoritmos
-- [ ] Comentários no code
+- [x] Comentários no code
+- [ ] Fazer relátorio 
