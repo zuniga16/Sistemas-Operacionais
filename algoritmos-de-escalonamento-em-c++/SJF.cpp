@@ -1,5 +1,3 @@
-/* CREATED BY ZUNIGA */
-
 #include <iostream>
 #include <locale.h>
 
@@ -81,7 +79,7 @@ int main(){
 	double avg_wt,avg_tat; 
 	avg_wt = average_wt(wt, qnt_processos);
 	avg_tat = average_tat(tat, qnt_processos);	
-	
+
 	int d,f;
 	cout << "\n[";
 	for(d = 0; d < qnt_processos; d++){

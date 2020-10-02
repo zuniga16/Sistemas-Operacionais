@@ -1,5 +1,3 @@
-/* CREATED BY ZUNIGA */
-
 #include <iostream>
 #include <locale.h>
 
@@ -118,10 +116,10 @@ int main(){
 	setlocale(LC_ALL, "Portuguese");
 	
 //	                     0  1  2  3
-//                           id bt dl p
+//                       id bt dl p
 	int processos[3][4]={0,3,7,20,
-			     1,2,4,5,
-		 	     2,2,8,10};
+			     		 1,2,4,5,
+		 	     		 2,2,8,10};
 		 
 	int qnt=3;
 	edf(processos, qnt);
